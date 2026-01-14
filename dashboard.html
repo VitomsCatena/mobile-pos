@@ -1,42 +1,42 @@
-<!DOCTYPE html> <!-- Declares HTML5 document type -->
-<html lang="en"> <!-- Opens HTML document with English language -->
-<head> <!-- Opens head section -->
-    <meta charset="UTF-8"> <!-- Sets character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Enables responsive design -->
-    <title>Management Dashboard</title> <!-- Sets browser title -->
-    <link rel="stylesheet" href="dashboard.css"> <!-- Links dashboard stylesheet -->
+<!DOCTYPE html> <!-- HTML5 document -->
+<html lang="en"> <!-- English language -->
+<head> <!-- Head section -->
+    <meta charset="UTF-8"> <!-- Encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Management Dashboard</title> <!-- Title -->
+    <link rel="stylesheet" href="dashboard.css"> <!-- Stylesheet -->
 </head> <!-- Closes head -->
 <body> <!-- Opens body -->
 
-    <header class="dashboard-header"> <!-- Header container -->
-        <h1>Management Dashboard</h1> <!-- Dashboard title -->
+    <header class="dashboard-header"> <!-- Header -->
+        <h1>Management Dashboard</h1> <!-- Title -->
     </header> <!-- Closes header -->
 
-    <section class="graph-section"> <!-- Section for cost variance graph -->
-        <h2>Cost Variance Graph</h2> <!-- Section heading -->
-        <canvas id="costVarianceChart"></canvas> <!-- Canvas for line chart -->
+    <section class="graph-section"> <!-- Graph section -->
+        <h2>Cost Variance Graph</h2> <!-- Heading -->
+        <canvas id="costVarianceChart" width="400" height="250"></canvas> <!-- Chart canvas -->
     </section> <!-- Closes graph section -->
 
-    <section class="recipe-editor"> <!-- Section for recipe editor -->
-        <h2>Recipe Editor</h2> <!-- Section heading -->
+    <section class="recipe-editor"> <!-- Recipe editor -->
+        <h2>Recipe Editor</h2> <!-- Heading -->
 
-        <label for="currentCost">Current Recipe Cost</label> <!-- Label for current cost -->
-        <input type="number" id="currentCost" value="100"> <!-- Input for current cost -->
+        <label for="currentCost">Current Recipe Cost</label> <!-- Label -->
+        <input type="number" id="currentCost" value="100"> <!-- Input -->
 
-        <label for="newCost">New Recipe Cost</label> <!-- Label for new cost -->
-        <input type="number" id="newCost"> <!-- Input for new cost -->
+        <label for="newCost">New Recipe Cost</label> <!-- Label -->
+        <input type="number" id="newCost"> <!-- Input -->
 
-        <button id="saveRecipeButton">Save Recipe</button> <!-- Button to save recipe -->
-    </section> <!-- Closes recipe editor section -->
+        <button id="saveRecipeButton">Save Recipe</button> <!-- Save button -->
+    </section> <!-- Closes recipe editor -->
 
-    <div id="warningModal" class="modal"> <!-- Modal container -->
-        <div class="modal-content"> <!-- Modal content box -->
-            <h3>High-Cost Warning</h3> <!-- Modal title -->
-            <p>Cost increase exceeds 5%. Please review before saving.</p> <!-- Warning message -->
-            <button id="closeModalButton">Close</button> <!-- Button to close modal -->
+    <div id="warningModal" class="modal"> <!-- Warning modal -->
+        <div class="modal-content"> <!-- Modal content -->
+            <h3>High-Cost Warning</h3> <!-- Title -->
+            <p>Cost increase exceeds 5%. Please review before saving.</p> <!-- Message -->
+            <button id="closeModalButton">Close</button> <!-- Close button -->
         </div> <!-- Closes modal content -->
     </div> <!-- Closes modal -->
 
-    <script src="dashboard.js"></script> <!-- Links dashboard JavaScript -->
+    <script src="dashboard.js"></script> <!-- Dashboard JavaScript -->
 </body> <!-- Closes body -->
-</html> <!-- Closes HTML document -->
+</html> <!-- Closes document -->
