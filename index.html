@@ -1,40 +1,37 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head> <!-- Opens the head section -->
-    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-</head> 
-<body> 
- <div class="status-bar"> <!-- Container for connectivity status -->
-        <span class="status-indicator online"></span> <!-- Green dot indicating online status -->
-        <span class="status-text">Online</span> <!-- Text label for online status -->
-    </div> <!-- Closes the status bar -->
+<!DOCTYPE html> <!-- Declares HTML5 document -->
+<html lang="en"> <!-- Sets language to English -->
+<head> <!-- Opens head -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsiveness -->
+    <title>Mobile POS Speed Screen</title> <!-- Page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links CSS -->
+</head> <!-- Closes head -->
+<body> <!-- Opens body -->
+
+    <div class="status-bar"> <!-- Network status bar -->
+        <span id="connectionIndicator" class="status-indicator online"></span> <!-- Status dot -->
+        <span id="connectionText">Online</span> <!-- Status text -->
+    </div> <!-- Closes status bar -->
 
     <div class="pos-container"> <!-- Main POS container -->
 
-        <aside class="category-sidebar"> <!-- Sidebar for item categories -->
-            <button class="category-button">Starters</button> <!-- Button for starters category -->
-            <button class="category-button">Mains</button> <!-- Button for mains category -->
-        </aside> <!-- Closes category sidebar -->
+        <aside class="category-sidebar"> <!-- Category sidebar -->
+            <button class="category-button" data-category="Starters">Starters</button> <!-- Starters category -->
+            <button class="category-button" data-category="Mains">Mains</button> <!-- Mains category -->
+        </aside> <!-- Closes sidebar -->
 
-        <main class="item-grid"> <!-- Main section for menu items -->
-            <button class="item-button">Burger</button> <!-- Menu item button -->
-            <button class="item-button">Pizza</button> <!-- Menu item button -->
-            <button class="item-button">Kachumbari</button> <!-- Menu item button -->
-            <button class="item-button">Beef Choma</button> <!-- Menu item button -->
-            <button class="item-button">Soup</button> <!-- Menu item button -->
+        <main class="item-grid" id="itemGrid"> <!-- Item grid -->
         </main> <!-- Closes item grid -->
-<aside class="order-ticket"> <!-- Order ticket section -->
-            <h2>Order Ticket</h2> <!-- Heading for order ticket -->
-            <ul class="order-list"> <!-- List of ordered items -->
-                <li>No items added</li> <!-- Placeholder list item -->
-            </ul> <!-- Closes order list -->
-            <button class="action-button send-button">Send to KDS</button> <!-- Button to send order to kitchen -->
-            <button class="action-button pay-button">Pay</button> <!-- Button to proceed to payment -->
+
+        <aside class="order-ticket"> <!-- Order ticket -->
+            <h2>Order Ticket</h2> <!-- Ticket heading -->
+            <ul id="orderList" class="order-list"></ul> <!-- Dynamic order list -->
+            <button id="sendToKdsButton" class="action-button send-button">Send to KDS</button> <!-- Send button -->
+            <button id="payButton" class="action-button pay-button">Pay</button> <!-- Pay button -->
         </aside> <!-- Closes order ticket -->
 
     </div> <!-- Closes POS container -->
 
-</body> <!-- Closes the body section -->
-</html> <!-- Closes the HTML document -->
+    <script src="pos.js"></script> <!-- Links POS JavaScript -->
+</body> <!-- Closes body -->
+</html> <!-- Closes document -->
