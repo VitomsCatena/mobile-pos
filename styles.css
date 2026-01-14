@@ -1,0 +1,117 @@
+/* Applies box sizing to all elements */
+* {
+    box-sizing: border-box; /* Includes padding and border in element width and height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Styles the body element */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+    background-color: #f4f4f4; /* Sets light background color */
+}
+
+/* Styles the status bar */
+.status-bar {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 10px; /* Adds spacing inside the bar */
+    background-color: #ffffff; /* Sets white background */
+}
+
+/* Styles the status indicator dot */
+.status-indicator {
+    width: 12px; /* Sets width of the dot */
+    height: 12px; /* Sets height of the dot */
+    border-radius: 50%; /* Makes the dot circular */
+    margin-right: 8px; /* Adds spacing to the right */
+}
+
+/* Styles online status */
+.status-indicator.online {
+    background-color: green; /* Green color for online */
+}
+
+/* Styles offline status */
+.status-indicator.offline {
+    background-color: red; /* Red color for offline */
+}
+
+/* Styles the main POS container */
+.pos-container {
+    display: flex; /* Uses flexbox layout */
+    height: calc(100vh - 40px); /* Fills viewport height minus status bar */
+}
+
+/* Styles the category sidebar */
+.category-sidebar {
+    width: 20%; /* Allocates width for sidebar */
+    background-color: #333333; /* Dark background color */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Stacks buttons vertically */
+}
+
+/* Styles category buttons */
+.category-button {
+    padding: 20px; /* Adds large touch-friendly padding */
+    font-size: 18px; /* Increases text size */
+    color: #ffffff; /* Sets text color to white */
+    background-color: #444444; /* Sets button background color */
+    border: none; /* Removes border */
+    border-bottom: 1px solid #555555; /* Adds divider line */
+}
+
+/* Styles the item grid */
+.item-grid {
+    width: 50%; /* Allocates width for item grid */
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 15px; /* Adds spacing between buttons */
+    padding: 15px; /* Adds padding around grid */
+}
+
+/* Styles item buttons */
+.item-button {
+    padding: 30px; /* Large padding for touch interaction */
+    font-size: 20px; /* Large text for readability */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #cccccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Styles the order ticket section */
+.order-ticket {
+    width: 30%; /* Allocates width for order ticket */
+    background-color: #ffffff; /* White background */
+    padding: 15px; /* Adds internal spacing */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Stacks elements vertically */
+}
+
+/* Styles the order list */
+.order-list {
+    flex-grow: 1; /* Allows list to expand */
+    margin: 15px 0; /* Adds vertical spacing */
+    list-style: none; /* Removes bullet points */
+}
+
+/* Styles action buttons */
+.action-button {
+    padding: 20px; /* Large padding for touch */
+    font-size: 18px; /* Increases text size */
+    margin-bottom: 10px; /* Adds spacing between buttons */
+    border: none; /* Removes border */
+    border-radius: 6px; /* Rounds corners */
+}
+
+/* Styles the send to KDS button */
+.send-button {
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text */
+}
+
+/* Styles the pay button */
+.pay-button {
+    background-color: #28a745; /* Green background color */
+    color: #ffffff; /* White text */
+}
