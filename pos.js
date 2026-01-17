@@ -1,7 +1,7 @@
 // menu items grouped by category
 const menuItemsByCategory = {
     Starters: ["Soup", "Salad", "Bruschetta"], 
-    Mains: ["Choma", "Pizza", "Pasta", "Kuku"] // Main items
+    Mains: ["Choma", "Pizza", "Pasta", "Kuku"] 
 };
 
 // Retrieves DOM elements
