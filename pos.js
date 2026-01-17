@@ -1,4 +1,4 @@
-// Defines menu items grouped by category
+// menu items grouped by category
 const menuItemsByCategory = {
     Starters: ["Soup", "Salad", "Bruschetta"], // Starter items
     Mains: ["Choma", "Pizza", "Pasta", "Kuku"] // Main items
