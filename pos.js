@@ -5,8 +5,8 @@ const menuItemsByCategory = {
 };
 
 // Retrieves DOM elements
-const itemGrid = document.getElementById("itemGrid"); // Item grid container
-const orderList = document.getElementById("orderList"); // Order list container
+const itemGrid = document.getElementById("itemGrid");
+const orderList = document.getElementById("orderList"); 
 const categoryButtons = document.querySelectorAll(".category-button"); // Category buttons
 const sendToKdsButton = document.getElementById("sendToKdsButton"); // KDS button
 const payButton = document.getElementById("payButton"); // Pay button
